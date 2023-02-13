@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Code Editor</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+
+
+</head>
+
+<body>
+  <div id="coding_playground_outer">
+    <header id="playground_header">
+      <h1>Code Editor</h1>
+      <h1>Build by &#128151 AbdulRehman</h1>
+      <div class="slection">
+        <div class="main-image">
+          <img src="images/svg-export/svgexport-10.png" id="main-image" alt="">
+          <div class="inner-section">
+            <div class="content">
+              <h3>Change View</h3>
+              <div class="inner-imges">
+                <div class="background ">
+                  <img src="images/svg-export/svgexport-10.png" id="first" alt="">
+                </div>
+                <div class="background ">
+                  <img src="images/svg-export/svgexport-10.png" id="second" alt="">
+                </div>
+                <div class="background ">
+                  <img src="images/svg-export/svgexport-10.png" id="third" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="page-wrap twilight">
+      <div class="boxes">
+        <div id="coding_area">
+          <textarea id="html" onkeyup="editor()" placeholder="HTML" class="prism-live language-html"></textarea>
+          <textarea id="css" onkeyup="editor()" placeholder="CSS" class="prism-live language-css"></textarea>
+          <textarea id="js" onkeyup="editor()" placeholder="javascript" class="prism-live language-js"></textarea>
+        </div>
+
+        <div id="code_output">
+          <h5 class="center">Output</h5>
+          <iframe id="code"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
