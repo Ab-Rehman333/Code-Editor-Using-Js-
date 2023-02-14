@@ -222,6 +222,13 @@ textarea::placeholder {
     .slection{
         display: none;
     }
+    #playground_header > h1:first-child{
+        display: none;
+    }
+    #playground_header{
+        justify-content: center;
+    }
+  
 }
 
 div#code_output {
