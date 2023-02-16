@@ -1,7 +1,7 @@
 let getMainBox = document.querySelector(".boxes");
 let getMainImage = document.querySelector("#main-image");
 let getMainSection = document.querySelector(".inner-section");
-let getCodingArea = document.querySelector("#coding_area");
+let getCodingArea = document.querySelector(".coding_area");
 let getBackground = document.querySelector(".background");
 const editor = () => {
   let getHtml = document.querySelector("#html");
@@ -31,6 +31,10 @@ getFirst.addEventListener("click", () => {
   getCodingArea.classList.add("second");
   getMainBox.classList.remove("first-one");
   getCodingArea.classList.remove("first");
+  getCodingArea.classList.remove("coding_area");
+  getMainImage.classList.add("main-rotate1")
+  getMainImage.classList.remove("main-rotate2")
+  getMainImage.classList.remove("main-rotate3")
 
 });
 getSecond.addEventListener("click", () => {
@@ -39,9 +43,18 @@ getSecond.addEventListener("click", () => {
   getCodingArea.classList.remove("second");
   getMainBox.classList.remove("first-one");
   getCodingArea.classList.remove("first");
+  getCodingArea.classList.add("coding_area");
+  getMainImage.classList.add("main-rotate3")
+  getMainImage.classList.remove("main-rotate1")
+  getMainImage.classList.remove("main-rotate2")
+
+
 });
 getThird.addEventListener("click", () => {
-  getBackground.classList.toggle("active")
-
+  getMainImage.classList.add("main-rotate2")
+  getMainImage.classList.remove("main-rotate1")
+  getMainImage.classList.remove("main-rotate3")
   getMainBox.classList.add("first-one");
+  getCodingArea.classList.add("first");
+  getCodingArea.classList.remove("coding_area");
 });

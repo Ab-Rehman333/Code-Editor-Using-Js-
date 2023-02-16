@@ -50,8 +50,9 @@ header#playground_header {
     position: relative;
 }
 
-.main-image>img {
+.img-rotate {
     cursor: pointer;
+    rotate: 180deg;
 }
 
 .inner-section {
@@ -120,7 +121,15 @@ header#playground_header {
 #third {
     rotate: -90deg;
 }
-
+.main-rotate1{
+    rotate:90deg ;
+}
+.main-rotate2{
+    rotate:-90deg ;
+}
+.main-rotate3{
+    rotate:180deg ;
+}
 header#playground_header>h1 {
     padding: 0;
     text-align: center;
@@ -154,17 +163,17 @@ iframe#code {
     width: 100%;
 }
 
-div#coding_area>div {
+div.coding_area>div {
     width: 100%;
     border-bottom: 4px solid var(--border);
 
 }
 
-div#coding_area>div:first-child {
+div.coding_area>div:first-child {
     border-left: none;
 }
 
-div#coding_area {
+div.coding_area {
     width: 100%;
     height: calc(60vh - 60px);
     min-height: 125px;
@@ -176,27 +185,27 @@ div#coding_area {
 }
 
 .first {
-    width: 50% !important;
-    height: 100% !important;
-    min-height: 125px !important;
-    display: flex !important;
-    flex-direction: column !important;
-    overflow: hidden !important;
-    border-bottom: 4px solid var(--border) !important;
+    width: 50%;
+    height: 100%;
+    min-height: 125px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-bottom: 4px solid var(--border);
 
 }
 .first-one {
-    display: flex !important;
-    flex-direction: row !important;
+    display: flex ;
+    flex-direction: row ;
 }
 .second {
-    width: 50% !important;
-    height: 100% !important;
-    min-height: 125px !important;
-    display: flex !important;
-    flex-direction: column !important;
+    width: 50% ;
+    height: 100% ;
+    min-height: 125px ;
+    display: flex ;
+    flex-direction: column ;
     overflow: hidden;
-    border-bottom: 4px solid var(--border) !important;
+    border-bottom: 4px solid var(--border) ;
 
 }
 .reverse {
@@ -208,6 +217,7 @@ textarea {
     font-size: 1.2em;
 }
 
+
 textarea::placeholder {
     font-weight: bold;
     color: var(--text-color-black);
@@ -215,7 +225,7 @@ textarea::placeholder {
 }
 
 @media (max-width:800px) {
-    div#coding_area {
+    div.coding_area {
         flex-direction: column;
         height: 100%;
     }
